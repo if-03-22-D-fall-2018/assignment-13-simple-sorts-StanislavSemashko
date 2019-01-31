@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------
- *				HTBLA-Leonding / Class: <your class name here>
+ *				HTBLA-Leonding / Class: "<your class name here>"
  *-----------------------------------------------------------------------------
  * Exercise Number: #exercise_number#
  * File:			stopwatch.cpp
@@ -10,3 +10,17 @@
  * <your description here>
  *-----------------------------------------------------------------------------
 */
+#include "stopwatch.h"
+
+void start_stopwatch()
+{
+
+}
+void stop_stopwatch()
+{
+
+}
+float elapsed_time()
+{
+  return 0;
+}

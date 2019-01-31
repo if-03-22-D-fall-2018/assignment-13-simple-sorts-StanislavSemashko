@@ -20,6 +20,8 @@
 *** Basically two functions to sort arrays of integer elements. Furthermore, a function
 *** to initialize an array with a number of random elements.
 */
-
+void init_random(int the_array[], int len);
+void bubble_sort(int the_array[], int len);
+void insertion_sort(int the_array[], int len);
 
 #endif
