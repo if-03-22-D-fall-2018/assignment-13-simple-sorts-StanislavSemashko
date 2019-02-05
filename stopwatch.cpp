@@ -28,7 +28,7 @@ float elapsed_time()
 {
   if (stop < start)
   {
-    return clock() -start;
+    return (clock() -start) / CLOCKS_PER_SEC;
   }
-  return stop - start;
+  return (stop - start) / CLOCKS_PER_SEC;
 }
