@@ -10,14 +10,18 @@
  * <your description here>
  *-----------------------------------------------------------------------------
 */
-
+#include "general.h"
+#include <cstdlib>
+#include <cstdbool>
+#include <time.h>
 #include "sorting_algorithms.h"
 
 void init_random(int the_array[], int len)
 {
-  for (int i = 0; i < len; i++)
+  srandom(time(NULL));
+  for (unsigned long i = 0; i < len; i++)
   {
-    // the_array[i] = ;
+    the_array[i] = random();
   }
 }
 void bubble_sort(int the_array[], int len)

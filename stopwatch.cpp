@@ -11,16 +11,24 @@
  *-----------------------------------------------------------------------------
 */
 #include "stopwatch.h"
+#include <time.h>
+
+float start;
+float stop;
 
 void start_stopwatch()
 {
-
+  start = clock();
 }
 void stop_stopwatch()
 {
-
+  stop = clock();
 }
 float elapsed_time()
 {
-  return 0;
+  if (stop < start)
+  {
+    return clock() -start;
+  }
+  return stop - start;
 }
